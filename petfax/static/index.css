@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    margin: auto;
+}
+
+a {
+    color: rgb(105, 105, 184);
+    text-decoration: none;
+}
+
+.pet-box {
+    min-width: auto;
+    /* min-height: 300px; */
+    margin: 20px 20px;
+    border-radius: 5px;
+}
+
+.pet-image-box {
+    background-color: rgb(16, 16, 56);
+    border: 5px solid rgb(16, 16, 56);
+}
+
+
+.pet-info {
+    border: 7px solid rgb(16, 16, 56);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 6px;
+    background-color: rgb(16, 16, 56);
+}
+
+.pet-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10px 0;
+    overflow-wrap: break-word;
+    color: rgb(105, 105, 184);
+}
+
+.pet-link {
+    font-size: 0.9rem;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    max-width: 950px;
+    margin: 10px auto;
+}
+
+.backlink {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 2rem;
+}

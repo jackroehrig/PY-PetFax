@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
     <title>PetFax</title>
 </head>
 <body>
     <h1>Welcome to PetFax</h1>
-    {% for pet in pets %}
-        <h2>{{pet.pet_name}}</h2>
-        <img src="{{pet.pet_photo}}" alt="'Photo of pet" />
-    {% endfor %}
+    <a href="/facts/new">Enter new fact ></a>
+    <div class="boxes-container">
+        {% for pet in pets %}
+            <div class="pet-box">
+                <div class="pet-image-box">
+                    <img src="{{pet.pet_photo}}" alt="'Photo of pet" />
+                </div>
+                <div class="pet-info">
+                    <h2>{{pet.pet_name}}</h2>
+                    <a href="/pets/{{pet.pet_id}}" class="pet-link">More about {{pet.pet_name}}></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
